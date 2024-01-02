@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- let变量声明及声明特性 -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            // 声明变量
+            let a = 1;
+            let b, c, d;
+            let e = 100;
+            let f = 521,
+                g = "hello",
+                h = [];
+            // 1.变量不能重复声明 SyntaxError
+            // let star  = '罗志祥';
+            // let star  = '小猪';
+
+            // 2. 块级作用域 全局 ，函数 ，eval
+            // if else while for
+            // {
+            //     let  girl = "周清扬";
+            // }
+            // console.log(girl); // not defined
+
+            // {
+            //     var girl = '周清扬';
+            // }
+            // console.log(girl); // 周清扬
+
+            // 3.不存在变量提升
+            // console.log(song); // undefined
+            // var song = '恋爱达人';
+
+            // console.log(song); // ReferenceErro
+            // let song = "恋爱达人";
+
+            // 4.不影响作用区域链
+            {
+                let school = '尚硅谷';
+                function fn() {
+                    console.log(school);
+                }
+                fn(); // 尚硅谷
+            }
+        </script>
+    </body>
+</html>
